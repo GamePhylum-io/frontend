@@ -1,0 +1,173 @@
+.home-page {
+    position: relative;
+
+    .banner {
+        width: 100%;
+        background: url("../../assets/img/home/banner.png") no-repeat bottom;
+        // background-size: 100% 100%;
+        position: relative;
+        // padding: 15%;
+        padding: 350px;
+        .ant-anchor-ink{
+            height: 0;
+        }
+        .content {
+            h3{
+                font-size: 68px;
+                margin-bottom: 6px;
+                line-height: 1.2;
+            }
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 40px;
+
+            >h1 {
+                font-size: 60px;
+               
+                font-family: "SourceHanSerifCNBold";
+            }
+
+            >div {
+                &:first-child{
+                    margin-bottom: 50px;
+                }
+                &:last-child{
+                    margin-top: 50px;
+                    h6{
+                        margin-top: 20px;
+                    }
+                }
+                .btn{
+                    display: inline-block;
+                    cursor: pointer;
+                    font-size: 38px;
+                    background: #112032;
+                    padding:10px 30px;
+                }
+
+                font-size: 30px;
+               
+             
+            }
+        }
+    }
+
+    .body {
+
+
+        .research-list {
+            margin-top: 20px;
+            padding: 0 30px;
+
+            .title {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 10px;
+
+            }
+        }
+
+        .ant-tabs-nav {
+            margin: 0;
+            height: 0;
+        }
+
+        .ant-tabs-top>.ant-tabs-nav::before,
+        .ant-tabs-top>div>.ant-tabs-nav::before {
+            width: 0;
+        }
+
+        .title-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            cursor: pointer;
+            &:hover{
+                background: #132c42;
+            }
+            h3 {
+                font-size: 20px;
+                margin-top: 10px;
+                line-height: 24px;
+
+            }
+
+            .time {
+                color: #72898d;
+            }
+
+            img {
+                border-radius: 6px;
+
+                height: 12vw;
+            }
+        }
+
+        .info-wrapper {
+            padding: 0 30px;
+            margin-top: 30px;
+           
+            .ant-btn {
+                color: #000;
+                font-weight: 700;
+                &:hover{
+                    color:#fff;
+                    background:  @primary-color;
+                }
+            }
+
+            .ant-card-body {
+                &:hover {
+                    background: #132c42;
+                    ;
+                }
+
+            }
+
+            .right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                >img {
+                    width: 100%;
+                    max-width: 650px;
+                    max-height: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 3px solid #405c6e;
+                }
+            }
+        }
+
+        .footer-wrapper {
+            background-color: #0e2133;
+            padding: 20px 30px;
+            margin-top: 30px;
+            .right{
+                text-align: center;
+                padding-right: 30px;
+            }
+            img{
+                height: 50px;
+            }
+            .icon{
+                img{
+                    height: 30px;
+                    margin-right: 20px;
+                }
+            }
+            p{
+                line-height: 32px;
+                cursor: pointer;
+            }
+            p:hover{
+                color: @primary-color;
+            }
+        }
+    }
+}

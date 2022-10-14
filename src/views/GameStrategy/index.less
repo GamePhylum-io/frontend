@@ -1,0 +1,75 @@
+.game-strategy {
+    padding: 0 30px;
+    display: flex;
+
+    .item {
+        cursor: pointer;
+        padding: 10px;
+        &:hover{
+            background: #132c42;
+        }
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
+
+    .left {
+        border-right: 1px solid #133752;
+        width: 256px;
+
+        .ant-menu-inline {
+            border-bottom: none;
+            color: #fff;
+            background: transparent;
+            font-size: 14px;
+            font-weight: 700;
+            border-right: 1px solid transparent;
+
+            .ant-menu-submenu-arrow {
+                color: #fff;
+            }
+
+            .ant-menu-sub {
+                font-size: 12px;
+            }
+
+            .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+                background: transparent;
+            }
+
+            >.ant-menu-item a {
+                color: #fff;
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+
+        .top {
+            padding: 0 20px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            min-height: 50px;
+            line-height: 50px;
+            display: flex;
+            border-bottom: 1px solid rgb(19, 55, 82);
+        }
+
+        .game-wrapper,
+        .marco-wrapper {
+            padding: 20px;
+
+            .top-select {
+                border-bottom: 1px solid rgb(19, 55, 82);
+                padding: 0px 0 10px 0;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
